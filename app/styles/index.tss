@@ -1,0 +1,9 @@
+".container": {
+	backgroundColor:"white",
+	layout : 'vertical'
+},
+".searchBar" : {
+    top : 20
+},
+"imageGrid": {
+} 

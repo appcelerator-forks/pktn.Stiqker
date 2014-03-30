@@ -1,0 +1,13 @@
+"ImageView": {
+	width: 105,
+	height: 105,
+	top: '1', // these two values control the "gutter"
+	left: '1', // these two values control the "gutter"
+	backgroundColor: "#111"
+},
+"ActivityIndicator[platform=ios]": {
+	style: Ti.UI.iPhone.ActivityIndicatorStyle.PLAIN
+},
+"ActivityIndicator[platform=android]": {
+	style: Ti.UI.ActivityIndicatorStyle.PLAIN
+}

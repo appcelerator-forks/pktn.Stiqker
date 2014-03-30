@@ -1,0 +1,6 @@
+<Alloy>
+    <Window class="container">
+        <SearchBar class="searchBar"/>
+        <Widget id="imageGrid" src="in.oisu.imageGrid" />
+    </Window>
+</Alloy>

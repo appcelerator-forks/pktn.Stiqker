@@ -1,0 +1,5 @@
+<Alloy>
+	<ImageView id="image">
+		<ActivityIndicator id="indicator" />
+	</ImageView>
+</Alloy>

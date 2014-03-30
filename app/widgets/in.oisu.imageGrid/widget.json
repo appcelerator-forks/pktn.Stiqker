@@ -1,0 +1,13 @@
+{
+	"id": "in.oisu.imageGrid",
+	"name": "Image Grid",
+	"description" : "A simple image grid",
+	"author": "oisu",
+	"version": "1.0",
+	"copyright":"Copyright (c) oisu 2014",
+	"license":"Public Domain",
+	"min-alloy-version": "1.0",
+	"min-titanium-version":"2.1",
+	"tags":"",
+	"platforms":"android,ios"
+}
