@@ -1,0 +1,13 @@
+<Alloy>
+	<View id="controlBar">
+        <View id="starBtn" class="btn">
+            <ImageView id="starBtnImage" image="star.png" />
+        </View>
+        <View id="lineBtn" class="btn">
+            <ImageView image="bubble.png" />
+        </View>
+        <View id="exportBtn" class="btn">
+            <ImageView image="export.png" />
+        </View>
+	</View>
+</Alloy>

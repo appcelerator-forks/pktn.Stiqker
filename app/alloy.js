@@ -9,3 +9,15 @@
 // object. For example:
 //
 // Alloy.Globals.someGlobalFunction = function(){};
+
+// global func
+var d = function(obj) {
+    Ti.API.info(obj);
+}
+
+var XHR = require('xhr');
+Alloy.Globals.xhr = new XHR();
+Alloy.Globals.xhr.clean();
+
+var Social = require('dk.napp.social');
+Alloy.Globals.social = Social;

@@ -1,13 +1,17 @@
 {
-  "global": {},
-  "env:development": {},
-  "env:test": {},
-  "env:production": {},
-  "os:android": {},
-  "os:blackberry": {},
-  "os:ios": {},
-  "os:mobileweb": {},
-  "dependencies": {
-    "in.oisu.imageGrid": "*"
-  }
+    "global": {},
+    "env:development": {},
+    "env:test": {},
+    "env:production": {},
+    "os:android": {},
+    "os:blackberry": {},
+    "os:ios": {
+        "xhr_ttl": 0,
+        "nend_apikey" : "6f4162af76199c1b55f49b5a0d300c358b4e2019",
+        "nend_spotId" : "156710"
+    },
+    "os:mobileweb": {},
+    "dependencies": {
+        "in.oisu.imageGrid": "*"
+    }
 }

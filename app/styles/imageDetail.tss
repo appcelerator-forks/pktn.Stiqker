@@ -1,0 +1,24 @@
+"#imageDetail" : {
+    backgroundColor : '#000'
+},
+"#container" : {
+    top : 20,
+    bottom : 0
+},
+"#imageDetail" : {
+    contentWidth: 'auto',
+    contentHeight: 'auto',
+    showVerticalScrollIndicator: true,
+    showHorizontalScrollIndicator: true,
+    maxZoomScale: 10,
+    minZoomScale: 0.5
+},
+"#bigImage" : {
+    width: Ti.Platform.displayCaps.platformWidth,
+    preventDefaultImage: true
+},
+"#darkView" : {
+    backgroundColor: "#000",
+    opacity: 0.8,
+    bottom : 50
+}

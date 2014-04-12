@@ -1,0 +1,6 @@
+"#smallImagePane" : {
+    top : 44,
+    bottom : 50,
+    contentWidth : '100%',
+	layout: "horizontal"
+}

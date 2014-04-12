@@ -4,3 +4,8 @@ build
 npm-debug.log
 tmp
 .map
+.idea
+Resources
+.settings
+.project
+plugins

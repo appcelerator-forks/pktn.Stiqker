@@ -1,6 +1,13 @@
 <Alloy>
-    <Window class="container">
-        <SearchBar class="searchBar"/>
-        <Widget id="imageGrid" src="in.oisu.imageGrid" />
-    </Window>
+    <TabGroup id="tabGroup">
+        <Tab id="homeTab" title="ホーム">
+            <Require id="homeWindow" src="homeWindow" />
+        </Tab>
+        <Tab id="starTab" title="お気に入り">
+            <Require id="starWindow" src="starWindow" />
+        </Tab>
+        <Tab id="settingTab" title="設定">
+            <Require id="settingWindow" src="settingWindow" />
+        </Tab>
+    </TabGroup>
 </Alloy>

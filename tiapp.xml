@@ -49,6 +49,8 @@
     </mobileweb>
     <modules>
         <module platform="iphone">jp.hsj.ticustompasteboard</module>
+        <module platform="iphone">net.nend</module>
+        <module platform="iphone">dk.napp.social</module>
     </modules>
     <deployment-targets>
         <target device="android">false</target>

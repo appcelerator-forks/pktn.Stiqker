@@ -15,9 +15,37 @@ $.image.applyProperties({
 });
 
 $.image.addEventListener('singletap', function (e) {
-    var Pb = require('jp.hsj.ticustompasteboard');
-    Pb.setImageToLine($.image.image);
-    Ti.API.info(1);
+		var scrollView = Ti.UI.createScrollView({
+				contentWidth: 'auto',
+				contentHeight: 'auto',
+				showVerticalScrollIndicator: true,
+				showHorizontalScrollIndicator: true,
+				maxZoomScale: 10,
+				minZoomScale: 0.5
+		});
+		var imgView = Ti.UI.createImageView({
+				width: Ti.Platform.displayCaps.platformWidth,
+				image: urlLarge,
+				preventDefaultImage: true
+		});
+		scrollView.add(imgView);
+
+		var view = Ti.UI.createView({
+				backgroundColor: "#000",
+				opacity: 0.8
+		});
+		var win = Ti.UI.createWindow({
+		});
+		win.addEventListener('singletap', function() {
+				win.close();
+		});
+		win.add(view);
+		win.add(scrollView);
+		win.open();
+		return;
+
+    //var Pb = require('jp.hsj.ticustompasteboard');
+    //Pb.setImageToLine($.image.image);
 });
 
 // Fetch the small image and cache it for 10 minutes

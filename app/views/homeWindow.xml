@@ -1,0 +1,8 @@
+<Alloy>
+    <Window id="homeWindow">
+        <Require id="smallImagePane" src="smallImagePane" />
+        <View id="maskView" />
+        <SearchBar id="searchBar"/>
+        <Require id="adView" src="adView" />
+    </Window>
+</Alloy>

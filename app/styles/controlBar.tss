@@ -1,0 +1,15 @@
+"#controlBar" : {
+    layout : 'horizontal',
+    height : 50,
+    backgroundColor : '#000',
+    opacity : 0.8,
+    bottom : 0,
+    width : Ti.Platform.displayCaps.platformWidth
+},
+".btn" : {
+    width : 24,
+    height : 24,
+    top : 13,
+    left : 64
+}
+

@@ -1,0 +1,9 @@
+<Alloy>
+	<Window id="imageDetail">
+        <View id="container">
+            <View id="darkView" />
+	        <ImageView id="bigImage" />
+		</View>
+	    <Require id="controlBar" src="controlBar" />
+	</Window>
+</Alloy>
