@@ -1,4 +1,7 @@
 <Alloy>
-	<Window>
+	<Window id="starWindow">
+        <Require id="smallImagePane" src="smallImagePane" />
+        <View id="maskView" />
+        <Require id="adView" src="adView" />
     </Window>
 </Alloy>

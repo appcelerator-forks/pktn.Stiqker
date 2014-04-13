@@ -1,11 +1,9 @@
-"#imageDetail" : {
-    backgroundColor : '#000'
-},
 "#container" : {
     top : 20,
     bottom : 0
 },
 "#imageDetail" : {
+    backgroundColor : '#000',
     contentWidth: 'auto',
     contentHeight: 'auto',
     showVerticalScrollIndicator: true,

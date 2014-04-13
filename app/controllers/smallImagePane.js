@@ -1,24 +1,13 @@
-exports.init = function (images, word) {
+exports.setImages = function(images) {
     $.smallImagePane.removeAllChildren();
 
-    var images = images || [];
-    var word = word || 'ドラえもん';
-    var URI_SEARCH = 'http://api.tiqav.com/search.json?q=' + word;
+    images.map(function (image) {
+        var imageId = image.get('image_id');
+        var ext = image.get('ext');
+        var url = String.format('http://img.tiqav.com/%s.%s', imageId, ext);
+        image.set({url : url});
 
-    Alloy.Globals.xhr.get(URI_SEARCH, onSuccessCallback, onErrorCallback);
-
-    function onSuccessCallback(e) {
-        var res = JSON.parse(e.data);
-
-        _.each(res, function (image, index) {
-            var url = String.format('http://img.tiqav.com/%s.%s', image.id, image.ext);
-            image.url = url;
-            $.smallImagePane.add(Alloy.createController('smallImage', image).getView());
-        });
-    }
-
-    function onErrorCallback(e) {
-        // On Error
-    }
-
+        var smallImage = Alloy.createController('smallImage', {image: image}).getView();
+        $.smallImagePane.add(smallImage);
+    });
 };

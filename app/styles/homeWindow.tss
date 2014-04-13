@@ -1,14 +1,14 @@
 "Window" : {
     title : '最近の画像'
 },
+"#searchBar" : {
+    hintText : '検索',
+    top : 0
+},
 "#maskView" : {
     width : '100%',
     height : '100%',
     opacity : 0.3,
     visible : false,
     backgroundColor : 'black'
-},
-"#searchBar" : {
-    hintText : '検索',
-    top : 0
 }

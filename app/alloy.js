@@ -21,3 +21,6 @@ Alloy.Globals.xhr.clean();
 
 var Social = require('dk.napp.social');
 Alloy.Globals.social = Social;
+    
+var Pb = require('jp.hsj.ticustompasteboard');
+Alloy.Globals.pb = Pb;

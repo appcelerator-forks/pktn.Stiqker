@@ -1,26 +1,20 @@
 var args = arguments[0] || {};
 
+var image = args.image;
+
 // Display the activity indicator
 $.indicator.show();
 
 var animation = require('alloy/animation');
 
-// Apply the arguments to the image
-$.smallImage.applyProperties({
-    imageId: args.id,
-    url: args.url,
-    isStar : args.isStar
-});
-
 $.smallImage.addEventListener('singletap', function (e) {
-    var imageDetail = Alloy.createController('imageDetail', e.source).getView();
+    var imageDetail = Alloy.createController('imageDetail', {image: image}).getView();
     imageDetail.open();
-    return;
 });
 
-// Fetch the small image and cache it for 10 minutes
+// Fetch the small image and cache it for ttl minutes
 Alloy.Globals.xhr.get(
-        args.url, 
+        image.get('url'), 
         onImageSuccess, 
         onImageFail,
         {
@@ -32,11 +26,7 @@ Alloy.Globals.xhr.get(
 // When the image fetching succeeds
 function onImageSuccess(e) {
     // Assign the blob to the image
-    // $.smallImage.image = e.data;
     var imgView = Ti.UI.createImageView({image: e.data});
-
-
-    //var blob = $.smallImage.toBlob();
     var blob = imgView.toBlob();
     var range = Math.min(blob.width, blob.height);
     var dimension = {x: 0, y: 0, height: range, width: range};
